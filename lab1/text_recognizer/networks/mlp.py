@@ -22,6 +22,7 @@ def mlp(input_shape: Tuple[int, ...],
     for _ in range(num_layers):
         model.add(Dense(layer_size, activation='relu'))
         model.add(Dropout(dropout_amount))
+        model.add(Dense(layer_size, activation='relu'))
     model.add(Dense(num_classes, activation='softmax'))
     ##### Your code above (Lab 1)
 
