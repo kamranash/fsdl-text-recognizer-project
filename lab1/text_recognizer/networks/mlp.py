@@ -22,7 +22,7 @@ def mlp(input_shape: Tuple[int, ...],
     #model.add(Dense(input_shape[0]*input_shape[0], activation='relu'))
     model.add(Dense(input_shape[0]*input_shape[0], activation='relu'))
     model.add(Dropout(dropout_amount))
-    model.add(Dense((input_shape[0]*input_shape[0])/2, activation='relu'))
+    #model.add(Dense((input_shape[0]*input_shape[0])/2, activation='relu'))
     model.add(Dense(layer_size, activation='relu'))
 #    model.add(Dense(layer_size/2, activation='relu'))
     
