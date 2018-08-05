@@ -10,7 +10,7 @@ from training.util import train_model
 
 DEFAULT_TRAIN_ARGS = {
     'batch_size': 64,
-    'epochs': 8
+    'epochs': 10
 }
 
 
@@ -25,8 +25,8 @@ def run_experiment(experiment_config: Dict, save_weights: bool, gpu_ind: int, us
         "model": "LineModel",
         "network": "line_cnn_sliding_window",
         "network_args": {
-            "window_width": 14,
-            "window_stride": 2
+            "window_width": 28,
+            "window_stride": 14
         },
         "train_args": {
             "batch_size": 128,
