@@ -1,0 +1,4 @@
+[default]
+entity: kamranash
+project: fsdl-kam-text-recognizer
+base_url: https://api.wandb.ai
