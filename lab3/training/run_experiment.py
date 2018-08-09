@@ -26,7 +26,7 @@ def run_experiment(experiment_config: Dict, save_weights: bool, gpu_ind: int, us
         "network": "line_cnn_sliding_window",
         "network_args": {
             "window_width": 28,
-            "window_stride": 14
+            "window_stride": 1
         },
         "train_args": {
             "batch_size": 128,
