@@ -9,8 +9,8 @@ from training.util import train_model
 
 
 DEFAULT_TRAIN_ARGS = {
-    'batch_size': 100,
-    'epochs': 15
+    'batch_size': 16,
+    'epochs': 30
 }
 
 
@@ -29,7 +29,7 @@ def run_experiment(experiment_config: Dict, save_weights: bool, gpu_ind: int, us
             "window_stride": 7
         },
         "train_args": {
-            "batch_size": 128,
+            "batch_size": 16,
             "epochs": 10
         }
     }
