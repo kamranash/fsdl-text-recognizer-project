@@ -9,8 +9,13 @@ from training.util import train_model
 
 
 DEFAULT_TRAIN_ARGS = {
+<<<<<<< HEAD
     'batch_size': 16,
     'epochs': 30
+=======
+    'batch_size': 100,
+    'epochs': 15
+>>>>>>> 4340e7d28c5176f9203cb1bb0b935d08a57ee32d
 }
 
 
