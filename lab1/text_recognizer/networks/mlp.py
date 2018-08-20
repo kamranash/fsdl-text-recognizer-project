@@ -21,34 +21,6 @@ def mlp(input_shape: Tuple[int, ...],
     # Don't forget to pass input_shape to the first layer of the model
     #print(input_shape)
     ##### Your code below (Lab 1)
-<<<<<<< HEAD
-=======
-    model.add(Reshape( (input_shape[0], input_shape[1], 1), input_shape=input_shape))
- 
-    #input_shape = np.reshape(input_shape, (input_shape[0], input_shape[1], 1))
-    #model.add(Dense((input_shape[0]*input_shape[1]), activation='relu'))
-    model.add(Conv2D(64, (4, 4), strides = (1, 1), padding='same', activation='relu' ))
-    #model.add(MaxPooling2D((2, 2)))
-    model.add(Conv2D(32, (4, 4), strides = (1, 1), padding='same', activation='relu' ))
-    #model.add(Conv2D(32, (4, 4), strides = (1, 1), padding='same', activation='relu' ))
-    
-    #model.add(Conv2D(8, (2, 2), strides = (1, 1), activation='relu' ))
-    #model.add(Conv2D(4, (2, 2), strides = (1, 1), activation='relu' ))
-    model.add(MaxPooling2D((2, 2)))
-    #model.add(Flatten(input_shape=input_shape))  
-    #model.add(Dense(input_shape[0]*input_shape[0]/2, activation='relu'))
-    #model.add(Dense(input_shape[0]*input_shape[0], activation='relu'))
-    #model.add(Dropout(dropout_amount))
-    #model.add(Dense((input_shape[0]*input_shape[0])/2, activation='relu'))
-    model.add(Flatten())
-    model.add(Dropout(dropout_amount))
-    model.add(Dense(layer_size, activation='relu'))
-    
-    model.add(Dense(layer_size, activation='relu'))
-    
-    #model.add(Dense(layer_size/2, activation='relu'))
->>>>>>> 4340e7d28c5176f9203cb1bb0b935d08a57ee32d
-    
     model.add(Reshape( (input_shape[0], input_shape[1], 1), input_shape=input_shape))
     
     model.add(Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', 
