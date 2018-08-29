@@ -39,7 +39,8 @@ def line_lstm_ctc(input_shape, output_shape, window_width=28, window_stride=14):
     # (image_height, image_width, 1)
 
     # Slide a conv filter stack over the image in the horizontal direction
-    conv = Conv2D(256, (image_height, window_width), (1, window_stride), activation='relu')(image_reshaped)
+    conv0 = Conv2D(64, (3, 3), (1, 1), activation='relu', padding='same')(image_reshaped)
+    conv = Conv2D(128, (image_height, window_width), (1, window_stride), activation='relu')(conv0)
 
     # (1, num_windows, conv_dim)
     # num_windows = (image_width - window_width) / window_stride + 1
